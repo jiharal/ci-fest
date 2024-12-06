@@ -2,10 +2,11 @@
 const nextConfig = {
     output: 'export',
     basePath: '/ci-fest',
+    assetPrefix: '/ci-fest/',
     images: {
-      unoptimized: true
+      unoptimized: true,
     },
-    assetPrefix: '/ci-fest'
-  }
+    trailingSlash: true,
+  };
   
-  module.exports = nextConfig
+  module.exports = nextConfig;
