@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #00B4D8;
+  --secondary: #02D394;
+  --accent: #5B4DFF;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-slate-50;
+}
+
+/* Custom utilities */
+.slide-gradient {
+  background: linear-gradient(135deg, #00B4D822, #02D39422);
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-all duration-300;
+}
+
+.hover-card:hover {
+  transform: translateY(-2px);
+  @apply shadow-lg;
+}
+
+/* Typography styles */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-bold tracking-tight;
+}
+
+/* Animation classes */
+.fade-in {
+  @apply transition-opacity duration-300;
+}
+
+.fade-in:not(.visible) {
+  @apply opacity-0;
+}
+
+.fade-in.visible {
+  @apply opacity-100;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 rounded-full;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400;
+}
